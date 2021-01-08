@@ -7,6 +7,11 @@ window.onscroll = () => {
   }
 };
 
+const hamburger = document.querySelector(".toggle-button");
+
+hamburger.addEventListener("click", () => {
+  document.querySelector(".nav-links").classList.toggle("active");
+});
 // --------Animation-----------
 
 gsap.registerPlugin(ScrollTrigger);
@@ -65,7 +70,7 @@ gsap.from(".social", {
 gsap.from(".project", {
   scrollTrigger: {
     trigger: ".project",
-    start: "top center",
+    start: "top bottom",
   },
   y: 100,
   opacity: 0,
@@ -77,7 +82,7 @@ gsap.from(".project", {
 const texts = [
   "Lets work together",
   "Get in touch",
-  "What are you waiting for?",
+  "Waiting to hear from you",
 ];
 let count = 0;
 let index = 0;
