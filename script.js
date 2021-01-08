@@ -1,3 +1,14 @@
+const navbar = document.querySelector(".nav-container");
+window.onscroll = () => {
+  if (window.scrollY > 900) {
+    navbar.classList.add("nav-active");
+  } else {
+    navbar.classList.remove("nav-active");
+  }
+};
+
+// --------Animation-----------
+
 gsap.registerPlugin(ScrollTrigger);
 
 let tl = gsap.timeline();
@@ -17,12 +28,34 @@ tl.from(".hero .hero-content", {
   "-=1"
 );
 
-gsap.from(".skill", {
+gsap.from(".about .about-content", {
   scrollTrigger: {
-    trigger: ".skills",
+    trigger: ".about",
     start: "top bottom",
   },
   x: -50,
+  opacity: 0,
+  duration: 1.5,
+  ease: "power2.out",
+});
+
+gsap.from(".skill", {
+  scrollTrigger: {
+    trigger: ".skills",
+    start: "top center",
+  },
+  x: -50,
+  opacity: 0,
+  stagger: 0.3,
+  duration: 2,
+  ease: "power2.out",
+});
+gsap.from(".social", {
+  scrollTrigger: {
+    trigger: ".contact",
+    start: "top bottom",
+  },
+  x: 50,
   opacity: 0,
   stagger: 0.3,
   duration: 2,
@@ -40,3 +73,27 @@ gsap.from(".project", {
   stagger: 0.5,
   ease: Power2.easeOut,
 });
+
+const texts = [
+  "Lets work together",
+  "Get in touch",
+  "What are you waiting for?",
+];
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
+
+(function type() {
+  if (count === texts.length) {
+    count = 0;
+  }
+  currentText = texts[count];
+  letter = currentText.slice(0, ++index);
+  document.querySelector(".typing").textContent = letter;
+  if (letter.length === currentText.length) {
+    count++;
+    index = 0;
+  }
+  setTimeout(type, 175);
+})();
