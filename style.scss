@@ -68,6 +68,7 @@ a {
   align-items: center;
   position: sticky;
   z-index: 1;
+  overflow: hidden;
   top: 0;
   transition: all 0.5s ease;
 
@@ -107,8 +108,10 @@ a {
 .nav-active {
   background: transparent;
   transform-origin: top left;
-  transform: rotate(90deg) translateY(-100%);
-  width: 800px;
+  transform: rotate(90deg);
+  left: 5rem;
+  top: 7rem;
+  width: 600px;
   overflow-y: hidden;
   nav {
     justify-content: flex-center;
@@ -116,7 +119,7 @@ a {
   nav ul li a {
     color: #fff;
     background: rgb(59, 59, 59);
-    font-size: 2rem;
+    font-size: 1.8rem;
 
     &:hover {
       color: #fff;
@@ -703,6 +706,7 @@ a {
     background: #313131;
     transform: rotate(0) translate(0, 0);
     width: 100%;
+    height: 100%;
 
     nav ul li a {
       background: none;

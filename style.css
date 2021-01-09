@@ -77,6 +77,7 @@ a {
   position: -webkit-sticky;
   position: sticky;
   z-index: 1;
+  overflow: hidden;
   top: 0;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -132,9 +133,11 @@ a {
   background: transparent;
   -webkit-transform-origin: top left;
           transform-origin: top left;
-  -webkit-transform: rotate(90deg) translateY(-100%);
-          transform: rotate(90deg) translateY(-100%);
-  width: 800px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  left: 5rem;
+  top: 7rem;
+  width: 600px;
   overflow-y: hidden;
 }
 
@@ -147,7 +150,7 @@ a {
 .nav-active nav ul li a {
   color: #fff;
   background: #3b3b3b;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .nav-active nav ul li a:hover {
@@ -900,6 +903,7 @@ a {
     -webkit-transform: rotate(0) translate(0, 0);
             transform: rotate(0) translate(0, 0);
     width: 100%;
+    height: 100%;
   }
   .nav-active nav ul li a {
     background: none;
