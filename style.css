@@ -130,17 +130,24 @@ a {
 
 .nav-active {
   background: transparent;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: rotate(90deg) translateY(-100%);
+          transform: rotate(90deg) translateY(-100%);
+  width: 800px;
+  overflow-y: hidden;
 }
 
 .nav-active nav {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: flex-center;
+      -ms-flex-pack: flex-center;
+          justify-content: flex-center;
 }
 
 .nav-active nav ul li a {
   color: #fff;
   background: #3b3b3b;
+  font-size: 2rem;
 }
 
 .nav-active nav ul li a:hover {
@@ -888,8 +895,14 @@ a {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
-  .nav-container {
-    position: relative;
+  .nav-active {
+    background: #313131;
+    -webkit-transform: rotate(0) translate(0, 0);
+            transform: rotate(0) translate(0, 0);
+    width: 100%;
+  }
+  .nav-active nav ul li a {
+    background: none;
   }
   nav {
     -webkit-box-orient: vertical;

@@ -106,13 +106,17 @@ a {
 }
 .nav-active {
   background: transparent;
-
+  transform-origin: top left;
+  transform: rotate(90deg) translateY(-100%);
+  width: 800px;
+  overflow-y: hidden;
   nav {
-    justify-content: center;
+    justify-content: flex-center;
   }
   nav ul li a {
     color: #fff;
     background: rgb(59, 59, 59);
+    font-size: 2rem;
 
     &:hover {
       color: #fff;
@@ -695,8 +699,14 @@ a {
       grid-template-columns: repeat(2, 1fr);
     }
   }
-  .nav-container {
-    position: relative;
+  .nav-active {
+    background: #313131;
+    transform: rotate(0) translate(0, 0);
+    width: 100%;
+
+    nav ul li a {
+      background: none;
+    }
   }
   nav {
     flex-direction: column;
