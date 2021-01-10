@@ -152,28 +152,14 @@ a {
 
 .toggle-button {
   position: absolute;
-  top: 2.5rem;
-  right: 3rem;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 30px;
-  height: 21px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  top: 1.6rem;
+  margin-right: 2rem;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
   display: none;
-}
-
-.toggle-button .bar {
-  height: 3px;
-  width: 100%;
-  background: white;
-  border-radius: 10px;
 }
 
 /* -------------HERO SECTION---------------- */
@@ -906,9 +892,7 @@ a {
             flex-direction: column;
   }
   nav .toggle-button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
   }
   nav .nav-links {
     display: none;

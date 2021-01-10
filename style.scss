@@ -123,21 +123,13 @@ a {
 }
 .toggle-button {
   position: absolute;
-  top: 2.5rem;
-  right: 3rem;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
+  align-self: flex-end;
+  top: 1.6rem;
+  margin-right: 2rem;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
   display: none;
-
-  .bar {
-    height: 3px;
-    width: 100%;
-    background: white;
-    border-radius: 10px;
-  }
 }
 
 /* -------------HERO SECTION---------------- */
@@ -708,7 +700,7 @@ a {
     flex-direction: column;
 
     .toggle-button {
-      display: flex;
+      display: block;
     }
     .nav-links {
       display: none;
