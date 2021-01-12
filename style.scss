@@ -659,6 +659,9 @@ a {
 }
 
 @media screen and (max-width: 680px) {
+  .hero {
+    background: url("./images/elements-line-600px.jpg");
+  }
   .container {
     text-align: center;
   }
