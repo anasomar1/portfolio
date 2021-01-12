@@ -909,6 +909,7 @@ a {
   }
   nav .nav-links ul li {
     text-align: center;
+    margin: 0;
   }
   nav.active .nav-links {
     display: -webkit-box;
