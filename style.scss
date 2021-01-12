@@ -63,6 +63,7 @@ a {
 .nav-container {
   background-color: #313131;
   min-height: 7vh;
+  height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -74,8 +75,11 @@ a {
 
   nav {
     max-width: 1500px;
+    height: 100%;
+
     display: flex;
     align-items: center;
+    position: relative;
     justify-content: center;
     width: 100%;
     margin: 0 auto;
@@ -124,7 +128,6 @@ a {
 .toggle-button {
   position: absolute;
   align-self: flex-end;
-  top: 1.6rem;
   margin-right: 2rem;
   color: white;
   font-size: 2.5rem;
@@ -715,14 +718,18 @@ a {
         }
       }
     }
-    .nav-links.active {
-      display: flex;
+    &.active {
+      .nav-links {
+        display: flex;
+        margin-top: 2rem;
 
-      margin-top: 2rem;
-
-      li a {
-        font-size: 1.6rem;
-        padding: 1rem;
+        li a {
+          font-size: 1.6rem;
+          padding: 1rem;
+        }
+      }
+      .toggle-button {
+        top: 2rem;
       }
     }
   }

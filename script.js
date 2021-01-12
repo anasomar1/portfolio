@@ -1,16 +1,17 @@
-const navbar = document.querySelector(".nav-container");
+const navcontainer = document.querySelector(".nav-container");
+const navbar = document.querySelector("nav");
 window.onscroll = () => {
   if (window.scrollY > 900) {
-    navbar.classList.add("nav-active");
+    navcontainer.classList.add("nav-active");
   } else {
-    navbar.classList.remove("nav-active");
+    navcontainer.classList.remove("nav-active");
   }
 };
 
 const hamburger = document.querySelector(".toggle-button");
 
 hamburger.addEventListener("click", () => {
-  document.querySelector(".nav-links").classList.toggle("active");
+  navbar.classList.toggle("active");
 });
 // --------Animation-----------
 
