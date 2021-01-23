@@ -1029,6 +1029,7 @@ nav.nav-active ul li a:hover {
 
 .message-container h3 {
   font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 .message-container h4 a {
