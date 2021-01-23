@@ -636,9 +636,9 @@ nav.nav-active ul li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 2rem 4rem;
   margin: 3rem 0 5rem 0;
   background: #313131;
@@ -663,6 +663,13 @@ nav.nav-active ul li a:hover {
   padding: 0.75rem 1.5rem;
 }
 
+.contact-form input:required, .contact-form input:focus,
+.contact-form textarea:required,
+.contact-form textarea:focus {
+  outline: none;
+  border: none;
+}
+
 .contact-form label {
   margin-bottom: 1rem;
 }
@@ -679,7 +686,7 @@ nav.nav-active ul li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
+  width: 80%;
 }
 
 .contact-form .submit-btn {
@@ -940,6 +947,9 @@ nav.nav-active ul li a:hover {
   }
   .contact .socials .social i {
     font-size: 3rem;
+  }
+  .contact-form .form-group {
+    width: 100%;
   }
   nav.nav-active {
     background: #313131;

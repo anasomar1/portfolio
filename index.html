@@ -322,15 +322,15 @@
       <form method="post" action="https://frozen-harbor-17288.herokuapp.com/form" class="contact-form">
         <div class="form-group">
           <label for="name">Name</label>
-          <input type="text" id='name' name='name'>
+          <input type="text" id='name' name='name' required>
         </div>
         <div class="form-group">
           <label for="name">Email</label>
-          <input type="email" id='name' name='email'>
+          <input type="email" id='name' name='email' required>
         </div>
         <div class="form-group">
           <label for="msg">Message</label>
-          <textarea type="text" id='msg' name='message' cols="30" rows="5"></textarea>
+          <textarea type="text" id='msg' name='message' cols="30" rows="5" required></textarea>
         </div>
         <button type='submit' class="submit-btn">Send me a message!</button>
       </form>
