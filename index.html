@@ -23,12 +23,10 @@
   <body>
     <!---------- NAVBAR ----------->
 
-    <div class="nav-container">
       <nav>
         <div class="toggle-button">
           <i class="fas fa-bars"></i>
         </div>
-        <div class="nav-links">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#about">About me</a></li>
@@ -36,9 +34,7 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-      </div>
       </nav>
-    </div>
 
     <div class="container">
       <!---------- HERO SECTION ----------->
@@ -49,12 +45,17 @@
             a front-end developer with a passion for creating great web
             experiences.
           </h4>
+          <div class="cta">
+          <a href="#about" class='btn primary'>
+            Get to know me
+          </a>
           <a
-            class="btn"
-            href="/images/AnasYaseenCV.pdf"
-            download="My Resume(PDF)"
-            >My Resume (PDF)<i class="fas fa-download"></i
-          ></a>
+          class="btn"
+          href="/images/AnasYaseenCV.pdf"
+          download="My Resume(PDF)"
+          >My Resume (PDF)<i class="fas fa-download"></i
+        ></a>
+          </div>
         </div>
         <img src="./images/elements-line.jpg" alt="html elements" />
 
@@ -75,16 +76,19 @@
             <p>
               My name is Anas Yaseen. I live in Jordan and I have a B.S. degree
               in
-              <em>mechatronics engineering</em> from AlBalqa Applied University.
+              <em>mechatronics engineering</em>.
               I really like working with the web and building new things from
-              scratch. I also like watching tv-shows, gaming and cooking. In my
-              free time I translate songs and post them on my
-              <a
+              scratch. I also like watching TV-shows, gaming and cooking. I translate songs on my<a
                 class="YT"
                 target="_blank"
                 href="https://www.youtube.com/c/anasyaseen"
                 >Youtube channel</a
-              >.
+              > and record web development tutorials on my<a
+              class="YT"
+              target="_blank"
+              href="https://www.youtube.com/channel/UCX38U7dM9pG5-ByhJkhHWrA"
+              >other channel</a
+            >.
             </p>
           </div>
           <img src="./images/personal-pic.jpg" alt="Personal Picture" />
@@ -315,6 +319,22 @@
           <h4>Email</h4>
         </div>
       </div>
+      <form method="post" action="https://frozen-harbor-17288.herokuapp.com/form" class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id='name' name='name'>
+        </div>
+        <div class="form-group">
+          <label for="name">Email</label>
+          <input type="email" id='name' name='email'>
+        </div>
+        <div class="form-group">
+          <label for="msg">Message</label>
+          <textarea type="text" id='msg' name='message' cols="30" rows="5"></textarea>
+        </div>
+        <button type='submit' class="submit-btn">Send me a message!</button>
+      </form>
+
     </section>
 
     <!-- JavaScript -->

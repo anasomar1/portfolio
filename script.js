@@ -2,9 +2,9 @@ const navcontainer = document.querySelector(".nav-container");
 const navbar = document.querySelector("nav");
 window.onscroll = () => {
   if (window.scrollY > 900) {
-    navcontainer.classList.add("nav-active");
+    navbar.classList.add("nav-active");
   } else {
-    navcontainer.classList.remove("nav-active");
+    navbar.classList.remove("nav-active");
   }
 };
 
