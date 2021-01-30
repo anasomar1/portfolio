@@ -81,7 +81,7 @@ gsap.from(".project", {
 });
 
 const texts = [
-  "Lets work together",
+  "Let's work together",
   "Get in touch",
   "Waiting to hear from you",
 ];
