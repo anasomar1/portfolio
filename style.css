@@ -436,6 +436,26 @@ nav.nav-active ul li a:hover {
   color: #941794;
 }
 
+.skills .skill .fa-vuejs {
+  color: #53ac8e;
+}
+
+.skills .skill .fa-java {
+  color: #3068b9;
+}
+
+.skills .skill .fa-database {
+  color: #01a8e8;
+}
+
+.skills .skill .fa-bootstrap {
+  color: #634589;
+}
+
+.skills .skill .fa-git-alt {
+  color: #ee4e2e;
+}
+
 /* ----------------- Projects Section ---------- */
 .projects h2 {
   border-bottom: 5px green solid;
@@ -824,6 +844,18 @@ nav.nav-active ul li a:hover {
   }
   .hero img {
     display: none;
+  }
+  .skills .skills-container {
+    padding: 1rem 2rem;
+  }
+  .skills .skills-container .skill h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .skills .skills-container .skill i {
+    font-size: 6rem;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
   }
 }
 

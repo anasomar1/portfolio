@@ -346,6 +346,21 @@ nav.nav-active {
     .fa-palette {
       color: rgb(148, 23, 148);
     }
+    .fa-vuejs {
+      color: #53ac8e;
+    }
+    .fa-java {
+      color: #3068b9;
+    }
+    .fa-database {
+      color: #01a8e8;
+    }
+    .fa-bootstrap {
+      color: #634589;
+    }
+    .fa-git-alt {
+      color: #ee4e2e;
+    }
   }
 }
 
@@ -630,6 +645,21 @@ nav.nav-active {
     }
     img {
       display: none;
+    }
+  }
+  .skills {
+    .skills-container {
+      padding: 1rem 2rem;
+      .skill {
+        h3 {
+          font-size: 2rem;
+          margin-bottom: 2rem;
+        }
+        i {
+          font-size: 6rem;
+          transition: 0.3s ease;
+        }
+      }
     }
   }
 }
