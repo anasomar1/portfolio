@@ -1034,6 +1034,13 @@ nav.nav-active ul li a:hover {
   .hero .hero-content .cta .btn {
     font-size: 1.3rem;
   }
+  .skills .skills-container .skill h3 {
+    font-size: 1.5rem;
+  }
+  .skills .skills-container .skill i {
+    font-size: 4.5rem;
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 350px) {

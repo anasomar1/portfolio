@@ -835,6 +835,19 @@ nav.nav-active {
   .hero .hero-content .cta .btn {
     font-size: 1.3rem;
   }
+  .skills {
+    .skills-container {
+      .skill {
+        h3 {
+          font-size: 1.5rem;
+        }
+        i {
+          font-size: 4.5rem;
+          margin: 0;
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 350px) {
   .hero .hero-content .cta .btn {
